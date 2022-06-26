@@ -1,34 +1,29 @@
-// // var names = ['ahmad', 'saman', 'ali', 'reza', 'shima'];
-// // console.log(num);
-// // num.sort();
-// // console.log(num);
+// const fruits = ["Banana", "Orange", "Center", "Apple", "Mango"];
+// document.getElementById('p1').innerHTML = fruits.sort();
+// document.getElementById('p2').innerHTML = fruits.sort().reverse();
+// var points = [40, 100, 1, 5, 25, 10];
 
-// // function nons(a, b) {
-// //     return a - b;
-// // }
-// // console.log(num);
-// // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// // console.log(
-// //     fruits.sort().reverse());
-// // const points = [40, 100, 1, 5, 25, 10];
-// // document.getElementById("p1").innerHTML = points;
-// // points.sort(function(a, b) { return a - b });
-// // document.getElementById("p2").innerHTML = points;
-// document.getElementById('p1').innerHTML = num;
-// num.sort(function(a, b) { return a - b });
+// document.getElementById('p3').innerHTML = points;
+// points.sort(function(a, b) { return a - b; });
+// // document.getElementById('p4').innerHTML = points.sort();
+// document.getElementById('p5').innerHTML = points;
+// var points = [40, 100, 1, 5, 25, 10];
+// document.getElementById('p1').innerHTML = points;
 
-var num = [20, 10, 4, 43, 50, 14, 40, 80, 64];
-document.getElementById('p1').innerHTML = num;
+// function myfunc1() {
+//     document.getElementById('p2').innerHTML = points.sort();
+// }
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById('p1').innerHTML = points;
 
-function myfunc1() {
-    num.sort();
-    document.getElementById('p2').innerHTML = num;
+// function myfunc2() {
+//     points.sort(function(a, b) { return 0.1 - Math.random() });
+//     document.getElementById('p2').innerHTML = points;
 
-}
+// }
+document.getElementById('p2').innerHTML = myfunc1(points);
 
-function myfunc2() {
-    num.sort(function(a, b) {
-        return a - b
-    });
-    document.getElementById('p3').innerHTML = num;
+function myfunc1(arr) {
+    return Math.min.apply(null, arr);
+
 }
