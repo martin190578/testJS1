@@ -21,9 +21,19 @@ document.getElementById('p1').innerHTML = points;
 //     document.getElementById('p2').innerHTML = points;
 
 // }
-document.getElementById('p2').innerHTML = myfunc1(points);
+// document.getElementById('p2').innerHTML = myfunc1(points);
 
-function myfunc1(arr) {
-    return Math.min.apply(null, arr);
+// function myfunc1(arr) {
+//     return Math.min.apply(null, arr);
 
+// }
+const cars = [{ name: 'BMW', price: '100' }, { name: 'audi', price: '200' }, { name: 'toyota', price: '300' }];
+cars.sort(function(a, b) { return a.name - b.price });
+myfunc1();
+
+function myfunc1() {
+    document.getElementById('p2').innerHTML =
+        cars[0].name + "   " + cars[0].price + "<br>" +
+        cars[1].name + "   " + cars[1].price + "<br>" +
+        cars[2].name + "   " + cars[2].price + "<br>"
 }
